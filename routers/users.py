@@ -137,7 +137,7 @@ def get_users(user: User = Depends(PermissionChecker([Users.permissions.VIEW_ME]
 
 
 @router.patch("/users/me",
-              dependencies=[Depends(PermissionChecker([Users.permissions.EDIT_ME, Users.permissions.EDIT_ME]))],
+              dependencies=[Depends(PermissionChecker([Users.permissions.VIEW_ME, Users.permissions.EDIT_ME]))],
               response_model=UserMe,
               summary="Change details for a logged in user", tags=["Users"])
 def update_me(user_update: UserUpdateMe, user: User = Depends(get_current_user),
