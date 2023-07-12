@@ -6,6 +6,15 @@ Forgot password example flow with FastAPI
 - `source python_venv/bin/activate`
 - `pip install -r requirements.txt`
 - `python3.11 main.py`
+- Create an .env file to add environment variables needed
+Example:
+```json
+SECRET_KEY=some_secret_key
+ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=60
+SENDER_GMAIL=some@example.com
+SENDER_GMAIL_PASSWORD=<your_google_app_password here>
+```
 
 ## Usage
 ### Create fist admin manually
