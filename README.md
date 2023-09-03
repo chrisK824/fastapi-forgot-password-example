@@ -16,8 +16,12 @@ SENDER_GMAIL=some@example.com
 SENDER_GMAIL_PASSWORD=<your_google_app_password here>
 ```
 
+Tutorial at: https://medium.com/itnext/fastapi-forgot-password-mechanism-end-to-end-74c068fd73bd
+
 ## Usage
 ### Create fist admin manually
-`INSERT INTO users (email,password,name,surname,register_date,role) VALUES('admin@example.com', '$2b$12$F1e3WBjqa1EMBwy5//FVPujkqUksC2a.JJEqKGy2bYA.tB/lAkhLW', 'Mockname', 'Mocksurname', '2023-04-19', 'ADMINISTRATOR');`
+- `INSERT INTO users (email,password,name,surname, role) VALUES('admin@example.com', '$2b$12$tLGdEP/3.B.sFTNITAfX5uLDzs6kgXq1PU8yxP/EnFIPBBWsvR4HG', 'Admin name', 'Admin surname', 'ADMINISTRATOR');`
+- user created: `admin@example.com` | `1234`
+
 ### Endpoints requests
 All endpoints can be used by visiting the swagger documentation at `localhost:9999/v1/documentation`

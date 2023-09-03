@@ -32,7 +32,7 @@ class User(UserSignUp):
     register_date: date
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 class UserOut(BaseModel):
@@ -43,7 +43,7 @@ class UserOut(BaseModel):
     register_date: date
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 class UserMe(BaseModel):
