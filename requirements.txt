@@ -9,5 +9,5 @@ python-dotenv==1.0.1
 python-multipart==0.0.20
 email-validator==2.2.0
 fastapi-mail==1.4.2
-attrs==24.3.0
+attrs==25.1.0
 bcrypt==4.2.1
