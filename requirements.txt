@@ -6,7 +6,7 @@ sqlalchemy==2.0.45
 passlib==1.7.4
 python-jose==3.5.0
 python-dotenv==1.2.1
-python-multipart==0.0.21
+python-multipart==0.0.22
 email-validator==2.3.0
 fastapi-mail==1.6.1
 attrs==25.4.0
