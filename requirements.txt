@@ -8,6 +8,6 @@ python-jose==3.5.0
 python-dotenv==1.2.2
 python-multipart==0.0.26
 email-validator==2.3.0
-fastapi-mail==1.6.2
+fastapi-mail==1.6.3
 attrs==26.1.0
 bcrypt==5.0.0
