@@ -1,5 +1,5 @@
 from pydantic import BaseModel, EmailStr
-from datetime import date
+from datetime import datetime
 from typing import Optional, List
 from permissions.roles import Role
 
@@ -29,7 +29,7 @@ class UserChangePassword(BaseModel):
 
 
 class User(UserSignUp):
-    register_date: date
+    register_date: datetime
 
     class Config:
         from_attributes = True
@@ -40,7 +40,7 @@ class UserOut(BaseModel):
     name: Optional[str]
     surname: Optional[str]
     role: Role
-    register_date: date
+    register_date: datetime
 
     class Config:
         from_attributes = True
@@ -50,7 +50,7 @@ class UserMe(BaseModel):
     email: EmailStr
     name: Optional[str]
     surname: Optional[str]
-    register_date: date
+    register_date: datetime
     role: Role
     permissions: List[str]
 

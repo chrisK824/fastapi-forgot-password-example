@@ -194,6 +194,7 @@ def user_reset_password(request: Request, new_password: str = Form(...), user: U
     try:
         result = db_crud.user_reset_password(db, user.email, new_password)
         return templates.TemplateResponse(
+            request,
             "reset_password_result.html",
             {
                 "request": request,
@@ -218,6 +219,7 @@ def user_reset_password_template(request: Request, user: User = Depends(get_curr
     try:
         token = request.query_params.get('access_token')
         return templates.TemplateResponse(
+            request,
             "reset_password.html",
             {
                 "request": request, 

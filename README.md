@@ -2,10 +2,10 @@
 Forgot password example flow with FastAPI
 
 ## Installation
-- `python3.11 -m venv python_venv`
-- `source python_venv/bin/activate`
-- `pip install -r requirements.txt`
-- `python3.11 main.py`
+- `uv venv -p 3.14 venv`
+- `source venv/bin/activate`
+- `uv pip install -r requirements.txt`
+- `python3.14 main.py`
 - Create an .env file to add environment variables needed
 Example:
 ```json
@@ -20,7 +20,7 @@ Tutorial at: https://medium.com/itnext/fastapi-forgot-password-mechanism-end-to-
 
 ## Usage
 ### Create fist admin manually
-- `INSERT INTO users (email,password,name,surname, role) VALUES('admin@example.com', '$2b$12$tLGdEP/3.B.sFTNITAfX5uLDzs6kgXq1PU8yxP/EnFIPBBWsvR4HG', 'Admin name', 'Admin surname', 'ADMINISTRATOR');`
+- `INSERT INTO users (email,password,name,surname, role, register_date) VALUES('admin@example.com', '$2b$12$tLGdEP/3.B.sFTNITAfX5uLDzs6kgXq1PU8yxP/EnFIPBBWsvR4HG', 'Admin name', 'Admin surname', 'ADMINISTRATOR', '2024-05-19');`
 - user created: `admin@example.com` | `1234`
 
 ### Endpoints requests

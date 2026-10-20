@@ -125,7 +125,6 @@ class ModelPermissionsMixin:
     under the `permissions` attribute.
     """
 
-    @classmethod
-    @property
-    def permissions(cls) -> ModelPermissions: # noqa
-        return ModelPermissions(cls)
+    def __init_subclass__(cls, **kwargs):
+        super().__init_subclass__(**kwargs)
+        cls.permissions = ModelPermissions(cls)
