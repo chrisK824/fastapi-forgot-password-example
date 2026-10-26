@@ -1,6 +1,6 @@
 fastapi[standard]==0.151.0
 pydantic==2.14.1
-sqlalchemy==2.1.4
+sqlalchemy==2.1.6
 python-jose==3.5.0
 python-dotenv==1.2.4
 fastapi-mail==1.6.8
